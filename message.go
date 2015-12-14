@@ -25,9 +25,9 @@ type Notification struct {
 	Color			string	`json:"color,omitempty"`
 	ClickAction		string	`json:"click_action,omitempty"`
 	BodyLocKey 		string	`json:"body_loc_key,omitempty"`
-	BodyLocArgs		string	`json:"body_loc_args,omitempty"`
+	BodyLocArgs		[]string	`json:"body_loc_args,omitempty"`
 	TitleLocKey 	string	`json:"title_loc_key,omitempty"`
-	TitleLocArgs	string	`json:"title_loc_args,omitempty"`
+	TitleLocArgs	[]string	`json:"title_loc_args,omitempty"`
 }
 
 // NewMessage returns a new Message with the specified payload
